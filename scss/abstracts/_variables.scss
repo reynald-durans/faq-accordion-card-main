@@ -1,0 +1,35 @@
+// Primary Colors
+
+$very-dark-desaturated-blue: hsl(238, 29%, 16%);
+$soft-red: hsl(14, 88%, 65%);
+$white: hsl(0,0%,100%);
+
+// Background gradient:
+
+$soft-violet: hsl(273, 75%, 66%);
+$soft-blue: hsl(240, 73%, 65%);
+
+// Text
+
+$very-dark-grayishblue: hsl(237, 12%, 33%);
+$dark-grayish-blue: hsl(240, 6%, 50%);
+
+// Dividers
+
+$light-grayish-blue: hsl(240, 5%, 91%);
+
+// Body Copy
+
+$font-size: 12px;
+
+// Font
+
+$font: 'Kumbh Sans', sans-serif;
+
+@mixin font ($family, $weight) {
+  font-family: $family;
+  font-weight: $weight;
+}
+
+// $family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans);
+// $weights: 400, 700;

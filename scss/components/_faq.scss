@@ -1,0 +1,62 @@
+@use "../abstracts/variables";
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .faq-card {
+    background-color: variables.$white;
+    color: variables.$very-dark-grayishblue;
+    border-radius: 25px;
+    box-sizing: border-box;
+    width: 325px;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 14px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    .faq-title--main {
+      text-align: center;
+      text-transform: uppercase;
+      color: variables.$very-dark-desaturated-blue;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 50px;
+    }
+    .item__list {
+      border-bottom: 1px solid variables.$light-grayish-blue;
+      .trigger-input {
+        display: none;
+        &:checked + .trigger-wrapper .faq-title {
+          color: variables.$very-dark-desaturated-blue;
+          font-weight: 700;
+          &::after {
+            content: url('./../../images/icon-arrow-down.svg');
+            transform: rotate(180deg);
+            transition: 0.3s;
+          }
+        }
+        &:checked + .trigger-wrapper .faq-content {
+          display: block;
+        }
+      }
+      .trigger-wrapper {
+        .faq-title {
+          cursor: pointer;
+          // padding: 10px;
+          padding: 15px 0;
+          font-size: 1.125rem;
+          &::after {
+            content: url('./../../images/icon-arrow-down.svg');
+            float: right;
+            transition: 0.3s;
+          }
+        }
+        .faq-content {
+          color: variables.$dark-grayish-blue;
+          text-align: justify;
+          line-height: 20px;
+          display: none;
+          padding: 0px 30px 15px 0;
+        }
+      }
+    }
+  }
+}

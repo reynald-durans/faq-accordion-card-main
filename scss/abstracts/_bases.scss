@@ -1,0 +1,14 @@
+@use "variables";
+
+html, body {
+  font-family: variables.$font;
+  font-size: variables.$font-size;
+}
+
+body {
+  background-image: linear-gradient(variables.$soft-violet, variables.$soft-blue);
+}
+
+.main-content {
+  height: 100vh;
+}
