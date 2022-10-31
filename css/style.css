@@ -94,7 +94,7 @@ body {
   font-weight: 700;
 }
 .main-content .faq-card .item__list .trigger-input:checked + .trigger-wrapper .faq-title::after {
-  content: url("./../../images/icon-arrow-down.svg");
+  content: url("../images/icon-arrow-down.svg");
   transform: rotate(180deg);
   transition: 0.3s;
 }
@@ -107,7 +107,7 @@ body {
   font-size: 1.125rem;
 }
 .main-content .faq-card .item__list .trigger-wrapper .faq-title::after {
-  content: url("./../../images/icon-arrow-down.svg");
+  content: url("../images/icon-arrow-down.svg");
   float: right;
   transition: 0.3s;
 }
